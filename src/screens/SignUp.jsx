@@ -16,7 +16,7 @@ const SignUp = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:3000/api/createuser", {
+      const response = await fetch("https://your-backend.vercel.app/api/createuser", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

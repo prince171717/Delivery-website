@@ -5,9 +5,9 @@ const Myorder = () => {
 
   const fetchMyOrder = async () => {
     console.log(localStorage.getItem("user-Email"));
-    await fetch("http://localhost:3000/api/myorderdata", {
+    await fetch("https://your-backend.vercel.app/api/myorderdata", {
       // credentials: 'include',
-      // Origin:"http://localhost:3000/login",
+      // Origin:"https://your-backend.vercel.app/login",
       method: "POST",
       headers: {
         "Content-Type": "application/json",
