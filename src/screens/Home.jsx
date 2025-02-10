@@ -11,7 +11,7 @@ const Home = () => {
   useEffect(() => {
     const loadData = async () => {
       try {
-        const res = await fetch("https://your-backend.vercel.app/api/foodData", {
+        const res = await fetch("https://delivery-website-aryi.vercel.app/foodData", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

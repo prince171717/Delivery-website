@@ -16,7 +16,7 @@ const SignUp = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://your-backend.vercel.app/api/createuser", {
+      const response = await fetch("https://delivery-website-aryi.vercel.app/createuser", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -5,7 +5,7 @@ const Myorder = () => {
 
   const fetchMyOrder = async () => {
     console.log(localStorage.getItem("user-Email"));
-    await fetch("https://your-backend.vercel.app/api/myorderdata", {
+    await fetch("https://delivery-website-aryi.vercel.app/myorderdata", {
       // credentials: 'include',
       // Origin:"https://your-backend.vercel.app/login",
       method: "POST",

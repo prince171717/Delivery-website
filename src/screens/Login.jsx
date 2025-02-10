@@ -13,7 +13,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://your-backend.vercel.app/api/loginuser", {
+      const response = await fetch("https://delivery-website-aryi.vercel.app/loginuser", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

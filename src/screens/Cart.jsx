@@ -16,7 +16,7 @@ const Cart = () => {
 
   const handleCheckout = async () => {
     const userEmail = localStorage.getItem("User-email");
-    const response = await fetch("https://your-backend.vercel.app/api/orderdata", {
+    const response = await fetch("https://delivery-website-aryi.vercel.app/orderdata", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
