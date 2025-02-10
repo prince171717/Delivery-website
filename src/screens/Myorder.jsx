@@ -3,14 +3,8 @@ import React, { useEffect, useState } from "react";
 const Myorder = () => {
   const [orderData, setorderData] = useState("");
 
-  // if (orderData.length === 0) {
-  //   return (
-  //     <div className="p-5 w-full text-center text-4xl">No order till date </div>
-  //   );
-  // }
-
   const fetchMyOrder = async () => {
-    console.log(localStorage.getItem("userEmail"));
+    console.log(localStorage.getItem("user-Email"));
     await fetch("http://localhost:3000/api/myorderdata", {
       // credentials: 'include',
       // Origin:"http://localhost:3000/login",
@@ -30,6 +24,12 @@ const Myorder = () => {
   useEffect(() => {
     fetchMyOrder();
   }, []);
+
+  if (orderData.length === 0) {
+    return (
+      <div className="p-5 w-full text-center text-4xl">No order till date </div>
+    );
+  }
 
   return (
     <div>

@@ -11,7 +11,7 @@ const PORT = 3000;
 mongoDb();
 
 app.use(express.json());
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ origin: "https://delivery-website-sepia.vercel.app/", credentials: true }));
 
 // app.use((req, res, next) => {
 //   res.setHeader("Access-Control-Allow-Origin", "http://localhost:5176"); // Or "*" for all origins in development
