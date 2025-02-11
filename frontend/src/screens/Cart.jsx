@@ -2,6 +2,9 @@ import React from "react";
 import { useCart, useDispatchCart } from "../components/ContextReducer";
 import { MdDelete } from "react-icons/md";
 
+// const Base_Url =import.meta.env.VITE_BASE_BACKEND_URL
+
+
 const Cart = () => {
   let data = useCart();
   let dispatch = useDispatchCart();
@@ -16,7 +19,7 @@ const Cart = () => {
 
   const handleCheckout = async () => {
     const userEmail = localStorage.getItem("User-email");
-    const response = await fetch("http://localhost:3000/api/orderdata", {
+    const response = await fetch(`${import.meta.env.VITE_BASE_BACKEND_URL}/orderdata`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -3,15 +3,19 @@ import Cards from "../components/Cards";
 import Carousel from "../components/Carousel";
 import { Link } from "react-router";
 
+// const Base_Url =import.meta.env.VITE_BASE_BACKEND_URL
+
 const Home = () => {
+ 
   const [foodItems, setFoodItems] = useState([]);
   const [foodCategory, setFoodCategory] = useState([]);
   const [search, setsearch] = useState("");
 
+
   useEffect(() => {
     const loadData = async () => {
       try {
-        const res = await fetch("http://localhost:3000/api/foodData", {
+        const res = await fetch(`${import.meta.env.VITE_BASE_BACKEND_URL}/foodData`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

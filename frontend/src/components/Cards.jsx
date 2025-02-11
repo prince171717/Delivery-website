@@ -60,12 +60,12 @@ const Cards = (props) => {
         <img
           className="rounded-t-lg w-full h-52 object-cover"
           src={foodItems.img}
-          alt={foodItems.foodname}
+          alt={foodItems.name}
         />
       </Link>
       <div className="p-5">
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-          {foodItems.foodname}
+          {foodItems.name}
         </h5>
 
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
