@@ -3,7 +3,7 @@ import { Router } from "express";
 import User from "../Models/User.js";
 import { userSchema } from "../zod.js";
 import crypto from "crypto";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import { z } from "zod";
 
 const router = Router();
