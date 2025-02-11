@@ -2,7 +2,7 @@ import express from "express";
 import { Router } from "express";
 import User from "../Models/User.js";
 import { loginschema } from "../zod.js";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import { z } from "zod";
 import jwt from "jsonwebtoken";
 import dotenv from 'dotenv'
