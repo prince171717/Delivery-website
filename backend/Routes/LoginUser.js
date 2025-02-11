@@ -5,8 +5,11 @@ import { loginschema } from "../zod.js";
 import bcrypt from "bcrypt";
 import { z } from "zod";
 import jwt from "jsonwebtoken";
+import dotenv from 'dotenv'
 
-const jwtSecret = "MynameisPrincethakur@oahfiehipri";
+dotenv.config(); 
+
+const jwtSecret = process.env.JWT_SECRET;
 const router = Router();
 
 router.post("/loginuser", async (req, res) => {

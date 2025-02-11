@@ -4,16 +4,19 @@ import loginrouter from "./Routes/LoginUser.js";
 import displayDataRouter from "./Routes/DisplayData.js";
 import orderRouter from "./Routes/OrderData.js";
 import cors from "cors";
+import dotenv from 'dotenv'
 import { mongoDb } from "./db.js";
+
+dotenv.config(); 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 mongoDb();
 
 app.use(express.json());
 const allowedOrigins = [
   "http://localhost:5173",  // For local testing
-  "https://delivery-website-sepia.vercel.app/"  // Update with your frontend Vercel URL
+  process.env.CORS_ORIGIN  // Update with your frontend Vercel URL
 ];
 
 // app.use(cors({ origin: "https://delivery-website-sepia.vercel.app/", credentials: true }));
