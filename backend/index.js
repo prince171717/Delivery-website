@@ -20,16 +20,15 @@ const allowedOrigins = [
 ];
 
 // app.use(cors({ origin: "https://delivery-website-sepia.vercel.app/", credentials: true }));
-app.use(cors({
-  origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
-  credentials: true
-}));
+app.use(
+  cors({
+    origin: allowedOrigins, // Allow frontend URLs
+    credentials: true, // Allow cookies and headers
+    methods: "GET,POST,PUT,DELETE",
+    allowedHeaders: "Content-Type,Authorization",
+  })
+);
+
 
 // app.use((req, res, next) => {
 //   res.setHeader("Access-Control-Allow-Origin", "http://localhost:5176"); // Or "*" for all origins in development
