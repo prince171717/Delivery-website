@@ -13,7 +13,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`${import.meta.env.VITE_BASE_BACKEND_URL}/loginuser`, {
+      const response = await fetch(`${import.meta.env.VITE_BASE_BACKEND_URL}/api/loginuser`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

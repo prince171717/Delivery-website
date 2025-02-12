@@ -5,7 +5,7 @@ const Myorder = () => {
 
   const fetchMyOrder = async () => {
     console.log(localStorage.getItem("user-Email"));
-    await fetch(`${import.meta.env.VITE_BASE_BACKEND_URL}/myorderdata`, {
+    await fetch(`${import.meta.env.VITE_BASE_BACKEND_URL}/api/myorderdata`, {
       // credentials: 'include',
       // Origin:"http://localhost:3000/login",
       method: "POST",

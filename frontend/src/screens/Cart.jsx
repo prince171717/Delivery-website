@@ -19,7 +19,7 @@ const Cart = () => {
 
   const handleCheckout = async () => {
     const userEmail = localStorage.getItem("User-email");
-    const response = await fetch(`${import.meta.env.VITE_BASE_BACKEND_URL}/orderdata`, {
+    const response = await fetch(`${import.meta.env.VITE_BASE_BACKEND_URL}/api/orderdata`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

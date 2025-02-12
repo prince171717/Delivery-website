@@ -15,7 +15,7 @@ const Home = () => {
   useEffect(() => {
     const loadData = async () => {
       try {
-        const res = await fetch(`${import.meta.env.VITE_BASE_BACKEND_URL}/foodData`, {
+        const res = await fetch(`${import.meta.env.VITE_BASE_BACKEND_URL}/api/foodData`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

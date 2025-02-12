@@ -16,7 +16,7 @@ const SignUp = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`${import.meta.env.VITE_BASE_BACKEND_URL}/createuser`, {
+      const response = await fetch(`${import.meta.env.VITE_BASE_BACKEND_URL}/api/createuser`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
