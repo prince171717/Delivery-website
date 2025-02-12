@@ -45,15 +45,14 @@ app.use(
 //   }
 // });
 
-app.get("/", (req, res) => {
-  res.send("Hello world");
-});
-
 app.use("/api", router);
 app.use("/api", loginrouter);
 app.use("/api", displayDataRouter);
 app.use("/api", orderRouter);
 
+app.get("/", (req, res) => {
+  res.send("Hello world");
+});
 
 app.listen(PORT, () => {
   console.log(`Server started on http://localhost:${PORT}`);

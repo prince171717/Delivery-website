@@ -20,6 +20,7 @@ const Home = () => {
           headers: {
             "Content-Type": "application/json",
           },
+          body: JSON.stringify({})
         });
         const resjson = await res.json();
         // console.log(resjson[0], resjson[1]);
