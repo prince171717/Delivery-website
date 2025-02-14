@@ -17,7 +17,7 @@ const Myorder = () => {
       }),
     }).then(async (res) => {
       let response = await res.json();
-       setorderData(response);
+      setorderData(response);
     });
   };
 
