@@ -131,18 +131,5 @@
             }
         ],
         "description": "Made using Indian masalas and Basmati rice. Barbequed pieces of Paneer/Chicken/Mutton were added."
-    },
-    {
-        "CategoryName": "Pizza",
-        "name": "Mix Veg Pizza",
-        "img": "https://www.thursdaynightpizza.com/wp-content/uploads/2022/06/veggie-pizza-side-view-out-of-oven-720x480.png",
-        "options": [
-            {
-                "regular": "100",
-                "medium": "200",
-                "large": "300"
-            }
-        ],
-        "description": "Made using Indian masalas and Basmati rice. Barbequed pieces of Paneer/Chicken/Mutton were added."
     }
 ]
