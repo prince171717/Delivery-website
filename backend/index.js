@@ -16,7 +16,9 @@ mongoDb();
 app.use(express.json());
 const allowedOrigins = [
   "http://localhost:5173",  // For local testing
-  process.env.CORS_ORIGIN  // Update with your frontend Vercel URL
+  process.env.CORS_ORIGIN,  // Update with your frontend Vercel URL
+  process.env.CORS_ORIGIN1,  // Update with your frontend Vercel URL
+
 ];
 
 // app.use(cors({ origin: "https://delivery-website-sepia.vercel.app/", credentials: true }));
